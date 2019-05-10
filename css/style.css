@@ -1,0 +1,587 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Bold.otf);
+    font-weight: bold;
+}
+
+body{
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+h2{
+    text-align: center;
+    padding: 20px 0px;
+    background: #021237;
+    color: #ffffff;
+    font-size: 40px;
+    width: 80%;
+    margin: 100px auto 50px auto;
+}
+
+h3{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.orange {
+    color: #ff5108;
+    font-weight: bold;
+}
+
+/* MOBILE HEADER */
+
+.burgermenu {
+    display: none;
+    background: url(../img/burgermenu.svg) center no-repeat;
+    background-color: #021237;
+    height: 25px;
+    width: 25px;
+    margin-right: 3%;
+    z-index: 999;
+    padding: 8px 12px;
+}
+
+.mobile-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+.mobile-navigation a {
+    color:#021237;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mobile-navigation .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+.mobile-navigation a:hover{
+    color:#cccccc;
+    font-weight: bold;
+}
+
+.mobile-navigation li {
+    text-align: right;
+    margin-right: 5%;
+    text-decoration: none;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+/* HEADER */
+
+header{
+    height: 150px; 
+    background: #021237;
+    color:#ffffff;
+    border-bottom: #e8591d 3px solid;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .branding img{
+    height: 80px;
+    object-fit: cover;
+}
+
+header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+}
+
+/* SHOWCASE */
+
+.showcase{
+    min-height: 500px;
+    /*   może zwiększyć wysokość do dużych rozdzielczości? */
+    background: url('../img/tlo3.png') no-repeat;
+    color:#ffffff;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10%;
+    text-align: center;
+}
+.showcase h1{
+    font-size: 45px;
+}
+.showcase p{
+    font-size: 35px;
+}
+
+/* BOXES */
+
+.boxes{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.boxes .box{
+    text-align: center;
+    padding: 25px;
+    max-width: 250px;
+}
+.boxes .box img{
+    width: 70px;
+}
+.boxes .box p{
+    min-height: 100px;
+}
+.boxes .box .ob1{
+    margin-top: 27px;
+}
+.boxes .box .ob2{
+    margin-top: 7px;
+}
+.boxes .box .ob3{
+    margin-top: 3px;
+}
+
+/* O FIRMIE */
+
+.paragraf-page {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4];
+    grid-template-rows: [line1] auto [line2] auto [line3];
+}
+.ofirmie img{
+    grid-area: line1 / line1 / line3 / line2;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+.ofirmie .paragraf{
+    padding: 0 25px;
+    margin: 0;
+}
+
+/* ULGI */
+
+.ulgi-page {
+    width: 80%;
+    margin: auto;
+}
+
+.ulgi h3 {
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto 30px auto;
+    color: #fff;
+    border: 2px solid #c6ccdd;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px 20px;
+    background-color: #021237;
+    border: 2px solid #c6ccdd;  
+}
+
+/* CERTYFIKATY */
+
+.certyfikaty .g1 {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-items: center;
+    grid-gap: 30px 10px;
+}
+
+.certyfikaty .g1 img {
+    object-fit: cover;
+    max-width: 450px;
+    max-height: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 100px;
+    padding: 0 10%;
+    height: 70px; 
+    background: #212329;
+    color:#ffffff;
+    border-top: #e8591d 3px solid;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    width: 50px;
+    height: 50px;
+}
+
+footer a img {
+    width: 100%;
+    height: 100%
+}
+
+
+/* PRODUKTY */
+
+.produkty .g1{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.produkty .g1 a {
+    width: 100%;
+    height: 100%;
+}
+
+.produkty .g1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* KALKULATOR */
+
+.kalkulator table {
+    width: 60%;
+}
+
+td {
+    padding: 15px;
+}
+
+/* ZAKLADKA KONTAKT */
+
+.kontakt-page {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    max-height: 500px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 60%;
+    margin-bottom: 30px
+}
+
+.contact-information {
+    width: 100%;
+    display: grid;
+    grid-template-columns: [line1] 15% [line2] 85% [line3];
+    grid-template-rows: [line1] 50px [line2] 50px [line3] 50px [line4] 50px [line5];
+    justify-items: start;
+    align-items: center;
+}
+
+.adres {
+    grid-column: line2 / line3;
+}
+
+.info a {
+    grid-column: line2 / line3;
+    text-decoration: none;
+    color:#000000;
+}
+
+.info a:hover {
+    color:#D4D9DB;
+}
+
+iframe {
+    visibility: none;
+    flex: 3;
+    margin-left: 8%;
+}
+
+/* ZAKLADKA GALERIA */
+
+.galeria-page .g1 {
+    width: 80%;
+    margin: 50px auto;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
+    grid-gap: 50px 10px;
+}
+
+.galeria-page figure {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.galeria-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.galeria-page figcaption{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #f4f4f4
+}
+
+.gallery {
+    cursor: pointer;
+}
+
+/* POWIĘKSZONE OBRAZY PO KLIKNIĘCIU */
+
+.overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+
+.overlay.open {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.overlay__inner {
+    background: white;
+    width: 80vw;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.overlay__image {
+    width: 100%;
+}
+
+.overlay__button {
+    background: none;
+    color: black;
+    font-size: 20px;
+    border: 0;
+}
+
+/* RESPONSYWNOŚĆ */
+
+@media all and (max-width: 1120px) {
+
+    header li{
+        display: block;
+        padding: 3px 20px;
+        text-align: right;
+    }
+    
+    .boxes{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media all and (max-width: 1040px) {
+    
+    .paragraf-page {
+        grid-template-columns: [line1] 1fr [line2] 1fr [line3];
+    }
+
+    .ofirmie .paragraf {
+        padding: 0 25px;
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 800px) {
+    
+    h2{ width: 96%; }
+    
+    header{
+        padding: 0 2%;
+    }
+
+    .main-navigation { display: none; }
+    
+    header{ height: 80px; }
+    
+    header .branding img {
+        height: 50px;
+        width: 200px;
+    }
+    
+    .burgermenu { display: block; }
+    
+    .showcase{ min-height: 350px; }
+
+    .boxes{ margin: 0 3%; }
+    
+    .boxes .box{ max-width: 280px; }
+
+    .paragraf-page { width: 96%; }
+
+    .ulgi-page { width: 96%; }
+
+    .certyfikaty .g1 { width: 96%; }
+
+    .produkty .g1{
+        width: 96%;
+        grid-gap: 10px 0px;
+    }
+
+    .kalkulator table { width: 96%; }
+
+    .kontakt-page {
+        width: 96%;
+        height: 1000px;
+        flex-direction: column;
+        max-height: 800px;
+    }
+
+    .info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 35%;
+        margin-bottom: 0px;
+    }
+
+    .contact-information {
+        padding-left: 30px;
+        align-items: center;
+    }
+
+
+    iframe {
+        width: 100%;
+        margin: auto;
+    }
+
+    .galeria-page .g1 {
+        width: 96%;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    
+    footer { padding: 0 2%; }
+}
+    
+@media all and (max-width: 780px) {
+    
+    .boxes{
+        margin: 0 2%;
+        justify-content: space-around;
+    }
+    
+    .boxes .box{
+        padding: 20px;
+        max-width: 205px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    
+    .ofirmie img{
+        display: none;
+    }
+    
+    table {
+        width: 70%;
+    }
+    
+    .kontakt-page {
+        margin: 0px auto;
+    }
+}
+    
+@media all and (max-width: 530px) {
+    
+    .showcase {
+        min-height: 400px;
+        padding: 0 2%;
+    }
+    
+    .showcase h1 { font-size: 35px; }
+    
+    .showcase p { font-size: 25px; }
+    
+    .boxes .box{
+        text-align: center;
+        padding: 25px;
+        max-width: 400px;
+    }
+    
+    .paragraf-page { grid-template-columns: [line1] 1fr [line2]; }
+    
+    table { width: 90%; }
+    
+    .certyfikaty .g1 {
+        grid-template-columns: [line1] 1fr [line2];
+    }
+
+    .certyfikaty .g1 img { width: 100%; }
+
+    .produkty .g1 { grid-template-columns: repeat(1, 1fr); }
+    
+    .galeria-page .g1 { grid-template-columns: repeat(1, 1fr); }
+    
+}
+    
+@media all and (max-width: 430px) {
+        
+        .logo { display: none; }
+}
