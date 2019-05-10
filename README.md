@@ -2,6 +2,7 @@
 > Website created for the local renewable energy provider. [Available here](http://www.m-power-fotowoltaika.pl)
 
 ## Screenshots
+### Desktop version:
 ![Website_screenshot](img/screen1.jpg)
 ![Website_screenshot_tablet](img/screen2.jpg)
 ![Website_screenshot_mobile](img/screen3.jpg)
