@@ -4,7 +4,9 @@
 ## Screenshots
 ### Desktop version:
 ![Website_screenshot](img/screen1.jpg)
+### Tablet version:
 ![Website_screenshot_tablet](img/screen2.jpg)
+### Mobile version:
 ![Website_screenshot_mobile](img/screen3.jpg)
 
 ## Technologies
