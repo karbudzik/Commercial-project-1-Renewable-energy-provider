@@ -10,7 +10,7 @@
     font-weight: bold;
 }
 
-body{
+body {
     font-family: Montserrat;
     font-size: 16px;
     line-height: 1.5;
@@ -19,7 +19,7 @@ body{
     background-color: #f4f4f4;
 }
 
-h2{
+h2 {
     text-align: center;
     padding: 20px 0px;
     background: #021237;
@@ -29,7 +29,7 @@ h2{
     margin: 100px auto 50px auto;
 }
 
-h3{
+h3 {
     font-size: 22px;
     text-transform: uppercase;
 }
@@ -66,6 +66,7 @@ h3{
     color: #e8491d;
     font-weight: bold;
 }
+
 .mobile-navigation a:hover{
     color:#cccccc;
     font-weight: bold;
@@ -83,7 +84,7 @@ h3{
 
 /* HEADER */
 
-header{
+header {
     height: 150px; 
     background: #021237;
     color:#ffffff;
@@ -95,36 +96,36 @@ header{
     padding: 0 10%;
 }
 
-header a{
+header a {
     color:#ffffff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-header li{
+header li {
     display: inline-block;
     padding: 0 20px;
 }
 
-header .branding img{
+header .branding img {
     height: 80px;
     object-fit: cover;
 }
 
-header .current a{
+header .current a {
     color: #e8491d;
     font-weight: bold;
 }
-header a:hover{
+
+header a:hover {
     color:#cccccc;
     font-weight: bold;
 }
 
 /* SHOWCASE */
 
-.showcase{
+.showcase {
     min-height: 500px;
-    /*   może zwiększyć wysokość do dużych rozdzielczości? */
     background: url('../img/tlo3.png') no-repeat;
     color:#ffffff;
     background-size: cover;
@@ -135,39 +136,47 @@ header a:hover{
     padding: 0 10%;
     text-align: center;
 }
-.showcase h1{
+
+.showcase h1 {
     font-size: 45px;
 }
-.showcase p{
+
+.showcase p {
     font-size: 35px;
 }
 
 /* BOXES */
 
-.boxes{
+.boxes {
     margin: 0 10%;
     display: flex;
     justify-content: space-between;
     flex: 1;
 }
-.boxes .box{
+
+.boxes .box {
     text-align: center;
     padding: 25px;
     max-width: 250px;
 }
-.boxes .box img{
+
+.boxes .box img {
     width: 70px;
 }
-.boxes .box p{
+
+.boxes .box p {
     min-height: 100px;
 }
-.boxes .box .ob1{
+
+.boxes .box .ob1 {
     margin-top: 27px;
 }
-.boxes .box .ob2{
+
+.boxes .box .ob2 {
     margin-top: 7px;
 }
-.boxes .box .ob3{
+
+.boxes .box .ob3 {
     margin-top: 3px;
 }
 
@@ -181,13 +190,15 @@ header a:hover{
     grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4];
     grid-template-rows: [line1] auto [line2] auto [line3];
 }
-.ofirmie img{
+
+.ofirmie img {
     grid-area: line1 / line1 / line3 / line2;
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
 }
-.ofirmie .paragraf{
+
+.ofirmie .paragraf {
     padding: 0 25px;
     margin: 0;
 }
@@ -236,7 +247,7 @@ td {
 
 /* FOOTER */
 
-footer{
+footer {
     margin-top: 100px;
     padding: 0 10%;
     height: 70px; 
@@ -259,10 +270,9 @@ footer a img {
     height: 100%
 }
 
-
 /* PRODUKTY */
 
-.produkty .g1{
+.produkty .g1 {
     width: 80%;
     margin: 50px auto;
     display: grid;
@@ -346,7 +356,7 @@ iframe {
 /* ZAKLADKA GALERIA */
 
 .galeria-page .g1 {
-    width: 80%;
+    width: 85%;
     margin: 50px auto;
     padding: 0px;
     display: grid;
@@ -448,15 +458,15 @@ iframe {
 
 @media all and (max-width: 800px) {
     
-    h2{ width: 96%; }
+    h2 { width: 96%; }
     
-    header{
+    header {
         padding: 0 2%;
     }
 
     .main-navigation { display: none; }
     
-    header{ height: 80px; }
+    header { height: 80px; }
     
     header .branding img {
         height: 50px;
@@ -465,11 +475,11 @@ iframe {
     
     .burgermenu { display: block; }
     
-    .showcase{ min-height: 350px; }
+    .showcase { min-height: 350px; }
 
-    .boxes{ margin: 0 3%; }
+    .boxes { margin: 0 3%; }
     
-    .boxes .box{ max-width: 280px; }
+    .boxes .box { max-width: 280px; }
 
     .paragraf-page { width: 96%; }
 
@@ -477,7 +487,7 @@ iframe {
 
     .certyfikaty .g1 { width: 96%; }
 
-    .produkty .g1{
+    .produkty .g1 {
         width: 96%;
         grid-gap: 10px 0px;
     }
@@ -506,7 +516,6 @@ iframe {
         align-items: center;
     }
 
-
     iframe {
         width: 100%;
         margin: auto;
@@ -522,12 +531,12 @@ iframe {
     
 @media all and (max-width: 780px) {
     
-    .boxes{
+    .boxes {
         margin: 0 2%;
         justify-content: space-around;
     }
     
-    .boxes .box{
+    .boxes .box {
         padding: 20px;
         max-width: 205px;
     }
@@ -535,7 +544,7 @@ iframe {
 
 @media all and (max-width: 600px) {
     
-    .ofirmie img{
+    .ofirmie img {
         display: none;
     }
     
@@ -559,7 +568,7 @@ iframe {
     
     .showcase p { font-size: 25px; }
     
-    .boxes .box{
+    .boxes .box {
         text-align: center;
         padding: 25px;
         max-width: 400px;
@@ -583,5 +592,5 @@ iframe {
     
 @media all and (max-width: 430px) {
         
-        .logo { display: none; }
+    .logo { display: none; }
 }
