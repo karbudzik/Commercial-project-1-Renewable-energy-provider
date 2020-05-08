@@ -356,11 +356,11 @@ iframe {
 /* ZAKLADKA GALERIA */
 
 .galeria-page .g1 {
-    width: 85%;
+    width: 80%;
     margin: 50px auto;
     padding: 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     justify-items: center;
     grid-gap: 50px 10px;
 }
