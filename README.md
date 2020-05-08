@@ -1,5 +1,5 @@
 # Commercial project 1 - Renewable energy provider
-> Website created for the local renewable energy provider. [Available here](http://www.m-power-fotowoltaika.pl)
+> Website created for the local renewable energy provider. Live site [available here](http://www.m-power-fotowoltaika.pl), github pages demo [available here](https://karbudzik.github.io/Commercial-website-1-Renewable-energy-provider/galeria.html).
 
 ## Screenshots
 ### Desktop version:
