@@ -4,7 +4,7 @@ const burger = document.querySelector(".burgermenu"),
       navigation = document.querySelector(".mobile-navigation"),
       property = navigation.style.display;
 
-burger.addEventListener("click", function(){
+burger.addEventListener("click", function() {
     if (window.getComputedStyle(navigation).display == "block") {
         navigation.style.setProperty("display", "none");
         burger.style.setProperty("background", "url(img/burgermenu.svg) center no-repeat");
@@ -26,9 +26,11 @@ function handleClick(e) {
     overlayImage.src = src;
     overlay.classList.add("open");
 }
+
 gallery.forEach(item => item.addEventListener("click", handleClick));
 
 function close() {
     overlay.classList.remove("open")
 }
+
 overlayClose.addEventListener("click", close);
